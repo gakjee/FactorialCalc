@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Factorial</title>
+</head>
+
+<body>
+    <centre>
+        <h1>Oliver Parsons 2023</h1>
+        <h1>Factorial MVC Calculator</h1>
+
+        <form action="/Home/Index" method="post">
+            <table border="1" height="150" width="300"></table>
+        <tr>
+            <td>Enter a number</td>
+            <td><input type="text" name="factnumber" /></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Calculate Factorial" /></td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <b>@ViewBag.result</b>
+        </form>
+    </centre>
+
+</body>
